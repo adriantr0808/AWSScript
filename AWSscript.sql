@@ -779,3 +779,18 @@ CREATE TABLE `RUTAS`(
 )
 )
 ;
+
+CREATE TABLE `USERS`(
+	`ID_USER` int NOT NULL,
+	`NAME` varchar(50) NULL,
+	`EMAIL` varchar(50) NULL,
+	`PASSWORD` blob (255) NULL,
+	`SALT` varchar(50) NULL,
+	`IMAGEN` varchar(255) NULL,
+	`RUTA` varchar(255) NULL,
+ CONSTRAINT `PK_USERS` PRIMARY KEY 
+(
+	`ID_USER` ASC
+)
+)
+;
